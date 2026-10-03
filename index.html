@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#f7e8df" />
+  <title>A Tiny Universe for Kemjuuki ★</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div id="petals" aria-hidden="true"></div>
+
+  <main id="lockScreen" class="lock-screen">
+    <section class="lock-card" aria-labelledby="lockTitle">
+      <div class="stamp">PRIVATE<br>DELIVERY</div>
+      <p class="eyebrow">The Kaju Ki Katlii Archive · File 0418</p>
+      <div class="portrait-placeholder mini"><span>R + You</span></div>
+      <h1 id="lockTitle">For the girl who makes<br><em>ordinary days glow.</em></h1>
+      <p class="lock-copy">A little birthday universe is waiting. Only Kemjuuki knows the four magic numbers.</p>
+      <form id="passwordForm" class="password-form">
+        <label for="password">Secret code</label>
+        <div class="code-row">
+          <input id="password" inputmode="numeric" maxlength="4" autocomplete="off" placeholder="••••" aria-describedby="error" />
+          <button type="submit">Unlock ★</button>
+        </div>
+        <p id="error" class="error" role="alert"></p>
+      </form>
+      <p class="microcopy">Made with ridiculous amounts of love.</p>
+    </section>
+  </main>
+
+  <main id="giftGate" class="gift-gate" hidden>
+    <section class="gate-card" aria-labelledby="gateTitle">
+      <div class="gate-counter">LEVEL 02 / THE ANNOYING QUESTION</div><span class="gate-emoji">🎁</span>
+      <p class="eyebrow">NO ESCAPING THIS ONE</p><h1 id="gateTitle">Next birthday,<br><em>what do you want?</em></h1>
+      <p class="gate-copy">Choose very carefully, Kemjuuki. The website is judging your answer.</p>
+      <div class="answer-grid">
+        <button class="answer-option correct" data-choice="iPhone"><span>01</span><b>iPhone</b><small>Excellent taste</small></button>
+        <button class="answer-option correct" data-choice="Samsung Galaxy Ultra"><span>02</span><b>Samsung Galaxy Ultra</b><small>Also acceptable</small></button>
+        <button id="nothingOption" class="answer-option"><span>03</span><b>Nothing</b><small>Suspicious answer</small></button>
+        <button id="naughtyOption" class="answer-option naughty"><span>04</span><b>Want to fuck me</b><small>Very dangerous button</small></button>
+        <button id="otherOption" class="answer-option other"><span>05</span><b>Something else…</b><small>Write your own demand</small></button>
+      </div><p class="gate-footnote">Hint: only options 01 or 02 unlock the birthday universe 😈</p>
+    </section>
+  </main>
+  <div id="retryModal" class="retry-modal" hidden><div class="retry-card" role="dialog" aria-modal="true" aria-labelledby="retryTitle"><button id="closeRetry" class="modal-close" aria-label="Close">×</button><span class="retry-face">🙄</span><p class="eyebrow">WRONG ANSWER DETECTED</p><h2 id="retryTitle">Try again right now.</h2><p>Please write what you actually want, birthday girl. “Nothing” is not accepted in this household.</p><label for="customWish">Your real birthday demand</label><textarea id="customWish" rows="3" placeholder="I want…"></textarea><button id="saveWish" class="button primary">Save my demand & try again</button><p id="wishSaved" class="wish-saved" aria-live="polite"></p></div></div>
+  <div id="naughtyModal" class="retry-modal" hidden><div class="retry-card naughty-card" role="dialog" aria-modal="true" aria-labelledby="naughtyTitle"><span class="retry-face">🤣😂🤣</span><p class="eyebrow">AYOOO, CAUGHT YOU</p><h2 id="naughtyTitle">Oops, fuckk you naughty lootyy garlll…</h2><p class="naughty-copy">Kuchuu puchuuu! Nice try, Kemjuuki. Now stop being naughty and choose again. 😂😂</p><button id="naughtyRetry" class="button primary">Fine, let me try again</button></div></div>
+
+  <main id="experience" class="experience" hidden>
+    <nav class="topbar">
+      <a href="#home" class="wordmark">KEMJUUKI<span>’S</span> DAY</a>
+      <div class="nav-links"><a href="#memories">Memories</a><a href="#games">Games</a><a href="#letter">Letter</a><a href="#surprises">Surprises</a></div>
+    </nav>
+
+    <section id="home" class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">01 OCT · A VERY IMPORTANT BROADCAST</p>
+        <h1>Happy birthday,<br><em>Kaju ki Katlii.</em></h1>
+        <p class="lead">Today the universe has one job: celebrate Rani — my favourite person, my soft place, my best plot twist.</p>
+        <div class="hero-actions"><a class="button primary" href="#memories">Enter our little museum</a><button class="button ghost" id="confettiBtn">Make it sparkle</button></div>
+      </div>
+      <div class="hero-art reveal">
+        <div class="orbit orbit-one"><span>you</span></div>
+        <div class="orbit orbit-two"><span>me</span></div>
+        <div class="moon-card">
+          <img class="hero-photo favorite-photo" src="photos/favorite-rani.jpeg" alt="Rani smiling in a beautiful garden at night">
+          <p>Exhibit A: the reason I smile at my phone.</p>
+        </div>
+        <span class="scribble">one in 8 billion ✶</span>
+      </div>
+      <a href="#memories" class="scroll-cue">Scroll to begin ↓</a>
+    </section>
+
+    <section id="memories" class="section museum">
+      <div class="section-heading reveal"><p class="eyebrow">CHAPTER ONE · OUR TINY MUSEUM</p><h2>Proof that we are<br><em>very cute together.</em></h2><p>Replace these frames with moments that feel like home.</p></div>
+      <div class="gallery">
+        <figure class="memory-card tilt-left reveal"><img class="photo-slot memory-photo" src="photos/photo1.jpeg" alt="Rani and her boyfriend together in traditional outfits"><figcaption><b>The one that started it all..</b><small>18th October 2025</small></figcaption></figure>
+        <figure class="memory-card tall tilt-right reveal"><img class="photo-slot memory-photo photo-two" src="photos/photo2.jpeg" alt="Rani sharing a playful moment with her boyfriend"><figcaption><b>My favourite day with you</b><small>Your story goes here</small></figcaption></figure>
+        <figure class="memory-card tilt-left reveal"><img class="photo-slot memory-photo photo-three" src="photos/photo3.png" alt="Rani and her boyfriend sharing a playful moment in matching blue outfits"><figcaption><b>Us being us</b><small>Perfectly unserious</small></figcaption></figure>
+        <figure class="memory-card wide tilt-right reveal"><img class="photo-slot memory-photo photo-four" src="photos/photo4.png" alt="Rani and her boyfriend looking at each other beneath warm garden lights"><figcaption><b>A memory I replay often</b><small>Write what made it special</small></figcaption></figure>
+      </div>
+      <p class="tape-note reveal">Psst — photo replacement steps are in README.txt ♡</p>
+    </section>
+
+    <section class="section question-section">
+      <div class="question-card reveal">
+        <span class="cat">/ᐠ｡ꞈ｡ᐟ\</span><p class="eyebrow">IMPORTANT QUESTION</p><h2>Do you know how wildly<br>I adore you?</h2>
+        <div class="choice-row"><button id="yesBtn" class="button primary">Yes, obviously</button><button id="noBtn" class="button ghost runaway">No?</button></div>
+        <p id="answerText" class="answer-text" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="letter" class="section letter-section">
+      <div class="envelope reveal" id="envelope" role="button" tabindex="0" aria-label="Open birthday letter">
+        <div class="envelope-back"></div><div class="letter-paper"><p class="eyebrow">A LETTER FOR RANI</p><h2>My dearest Kemjuuki,</h2><div class="letter-placeholder">There are so many quiet, beautiful things about you that made me fall for you, and even more that keep me falling every single day. I love the genuine warmth you carry, the honesty in your voice, and how you see right through me without me having to pretend or hide. I love your laughter, the way your expression softens when you're truly happy, and the way you make the most ordinary moments feel like something worth holding onto.
+​If there is one memory I want etched into my mind forever, it’s that second time we sat down and talked. The rest of the world was moving around us, but in that conversation, everything suddenly felt calm and familiar. I looked at you and realized you weren't a stranger I was trying to impress—you were someone my heart had been waiting to find. That was the moment I knew you were going to change my life.
+​Looking ahead, I can't wait for all the tomorrows we have yet to live. I can't wait to cheer for you through every single dream you chase, to hold your hand through the messy, chaotic days, and to share those quiet, late-night talks where nothing else exists. I want to build a life where we travel, laugh through silly blunders, celebrate all your wins, and grow side-by-side into every new version of ourselves. With you, the future isn’t something uncertain—it’s the place I most want to be.
+</div><p class="signature">Forever yours,<br><span>Your BAIL ♡</span></p></div><div class="envelope-front"></div><div class="seal">R</div>
+      </div>
+      <p class="open-hint">Tap the envelope to open your letter</p>
+    </section>
+
+    <section id="surprises" class="section surprises">
+      <div class="section-heading reveal"><p class="eyebrow">CHAPTER THREE · CHOOSE A GIFT</p><h2>Three tiny promises,<br><em>wrapped for you.</em></h2></div>
+      <div class="gifts">
+        <button class="gift reveal" data-message="One date planned completely around your favourite things."><span class="bow">★</span><b>Open me</b><small>Gift no. 01</small></button>
+        <button class="gift reveal" data-message="One day where I say yes to every snack request."><span class="bow">♡</span><b>Pick me</b><small>Gift no. 02</small></button>
+        <button class="gift reveal" data-message="Unlimited hugs. No expiry date. Terms: non-transferable."><span class="bow">☼</span><b>Choose me</b><small>Gift no. 03</small></button>
+      </div>
+      <div id="giftReveal" class="gift-reveal" aria-live="polite">Choose one — no peeking.</div>
+    </section>
+
+    <section id="games" class="section games-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">BONUS LEVEL · KEMJUUKI’S COUPLE ARCADE</p>
+        <h2>Four little games.<br><em>One very cute prize.</em></h2>
+        <p>Win games to collect four love stamps. No pressure—except I will absolutely judge your score.</p>
+      </div>
+      <div class="arcade-progress reveal"><span>LOVE STAMPS</span><div id="stampTrack" class="stamp-track"><i>♡</i><i>♡</i><i>♡</i><i>♡</i></div><b id="stampCount">0 / 4</b></div>
+
+      <div class="game-grid">
+        <article class="game-card reveal" id="memoryGame">
+          <div class="game-label"><span>GAME 01</span><b>Memory Match</b></div>
+          <p>Match all four pairs. Basically us finding each other in every universe.</p>
+          <div id="memoryBoard" class="memory-board" aria-label="Memory matching game"></div>
+          <div class="game-status"><span id="memoryMoves">Moves: 0</span><button id="resetMemory">Reset</button></div>
+        </article>
+
+        <article class="game-card reveal" id="decoderGame">
+          <div class="game-label"><span>GAME 02</span><b>Love Decoder</b></div>
+          <p>Unscramble the secret word. Hint: it is your sweetest nickname.</p>
+          <div class="scramble" id="scrambleWord">J U U K E M I</div>
+          <label for="decoderInput">Your answer</label>
+          <div class="mini-form"><input id="decoderInput" autocomplete="off" placeholder="Type the word"><button id="checkDecoder">Decode</button></div>
+          <p id="decoderStatus" class="inline-status" aria-live="polite"></p>
+        </article>
+
+        <article class="game-card reveal" id="choiceGame">
+          <div class="game-label"><span>GAME 03</span><b>This or That</b></div>
+          <p>Build our next date by making four extremely serious decisions.</p>
+          <div id="choicePrompt" class="choice-prompt">Ready to plan our date?</div>
+          <div id="choiceButtons" class="this-that"><button data-side="a">Start</button><button data-side="b">Obviously start</button></div>
+          <p id="choiceResult" class="inline-status"></p>
+        </article>
+
+        <article class="game-card reveal catch-card" id="catchGame">
+          <div class="game-label"><span>GAME 04</span><b>Catch My Hearts</b></div>
+          <p>Catch 8 hearts before time runs out. Avoid the grumpy clouds.</p>
+          <div id="catchArena" class="catch-arena"><button id="startCatch" class="catch-start">Start 15-second round</button></div>
+          <div class="game-status"><span id="catchScore">Hearts: 0 / 8</span><span id="catchTime">Time: 15</span></div>
+        </article>
+      </div>
+
+      <div id="arcadePrize" class="arcade-prize reveal">
+        <span>🔒</span><div><b>Secret prize locked</b><p>Win all four games to reveal it.</p></div>
+      </div>
+    </section>
+
+    <section class="section finale">
+      <div class="cake reveal" id="cake"><div class="flame"></div><div class="candle"></div><div class="cake-top"></div><div class="cake-body"><span>RANI</span></div></div>
+      <div class="final-copy reveal"><p class="eyebrow">ONE LAST WISH</p><h2>May every version of your future be full of laughter, softness, adventure — and me annoying you.</h2><p>Tap the flame, make a wish, and know that you are loved more than this tiny website can hold.</p><button id="wishBtn" class="button primary">Make a wish ★</button></div>
+    </section>
+
+    <footer><p>Handmade for Kemjuuki · Birthday edition</p><p>Rani, you are my favourite notification.</p></footer>
+  </main>
+
+  <div id="toast" class="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
